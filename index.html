@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CodeJam</title>
+</head>
+<body>
+    <h1><a href="index.html">CodeJam</a></h1>
+
+    <input type="button" value="night" onclick="
+    alert('change to night mode');
+    document.querySelector('body').style.backgroundColor='black';
+    document.querySelector('body').style.cololr='white';
+    ">
+    <input type="button" value="day" onclick="
+    alert('change to day mode');
+    document.querySelector('body').style.backgroundColor='white';
+    document.querySelector('body').style.color='black';
+    ">
+
+    <input type="text" value="hi" onchange="alert('changed');">
+    
+    <!--onkeydown/up: represent any keys being typed,
+    which include backspace, tab, up, down, home, end, etc-->
+    <!--
+        <input type="text" onkeydown="alert('key down!')">
+    -->
+    
+    <!--onkeypress: represent a character being typed can be used for input-->
+    <!--
+    <input type="text" onkeypress="alrer('key press!')">
+    -->
+    <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="study.html">STUDY</a></li>
+        <li><a href="info.html">ABOUT ME</a></li>
+    </ul>
+    <img src="jam.jpg" width="50%">
+</body>
+</html>
