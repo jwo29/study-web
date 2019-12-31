@@ -4,16 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./CSS/style.css">
     <title>CodeJam</title>
 </head>
 <body>
     <h1><a href="index.html">CodeJam</a></h1>
+
+    <input type="button" value="night" onclick="
+    alert('change to night mode');
+    document.querySelector('body').style.backgroundColor='black';
+    document.querySelector('body').style.color='white';
+    ">
+
+    <input type="button" value="day" onclick="
+    alert('change to day mode');
+    document.querySelector('body').style.backgroundColor='white';
+    document.querySelector('body').style.color='black';
+    ">
     <ul>
         <li><a href="index.html">HOME</a></li>
         <li><a href="study.html">STUDY</a></li>
         <li><a href="info.html">ABOUT ME</a></li>
     </ul>
     <h2>Introduce myself</h2>
-    <img src="jam.jpg" width="50%">
+    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/xD80po-441Y"
+        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </p>
 </body>
 </html>
