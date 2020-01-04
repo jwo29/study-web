@@ -1,29 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>CodeJam</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./CSS/style.css">
-    <title>CodeJam</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./JS/color.js"></script>
 </head>
 <body>
     <h1><a href="index.html">CodeJam</a></h1>
+    <input type="button" value="night" onclick="Body.nightDayHandler(this)">
+    <!-- without argument 'this', function NightDayHandler does not work -->
 
-    <input id="night_day" type="button" value="night" onclick="
-        if (document.querySelector('#night_day').value === 'night'){
-            alert('change to night mode');
-            document.querySelector('body').style.backgroundColor='black';
-            document.querySelector('body').style.cololr='white';
-            document.querySelector('#night_day').value = 'day';
-        }else{
-            alert('change to day mode');
-            document.querySelector('body').style.backgroundColor='white';
-            document.querySelector('body').style.color='black';
-            document.querySelector('#night_day').value = 'night';
-        }
-    ">
-    
     <!--onkeydown/up: represent any keys being typed,
     which include backspace, tab, up, down, home, end, etc-->
     <!--
@@ -34,11 +24,13 @@
     <!--
     <input type="text" onkeypress="alrer('key press!')">
     -->
-    <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="study.html">STUDY</a></li>
-        <li><a href="info.html">ABOUT ME</a></li>
-    </ul>
-    <img src="./image/jam.jpg" width="50%">
+    <div id="menu-box">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="study.html">STUDY</a></li>
+            <li><a href="info.html">ABOUT ME</a></li>
+        </ul>
+    </div>
+    <img src="./image/jam.jpg" width="30%">
 </body>
 </html>

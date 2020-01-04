@@ -1,50 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>CodeJam</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./CSS/style.css">
-    <title>CodeJam</title>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <script src="./JS/color2.js"></script>
 </head>
 <body>
     <h1><a href="index.html">CodeJam</a></h1>
 
-    <input id="night_day" type="button" value="night" onclick="
-        if (document.querySelector('#night_day').value === 'night'){
-            alert('change to night mode');
-            document.querySelector('body').style.backgroundColor='black';
-            document.querySelector('body').style.cololr='white';
-            document.querySelector('#night_day').value = 'day';
-        }else{
-            alert('change to day mode');
-            document.querySelector('body').style.backgroundColor='white';
-            document.querySelector('body').style.color='black';
-            document.querySelector('#night_day').value = 'night';
-        }
-    ">
-    
-    <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="study.html">STUDY</a></li>
-        <li><a href="info.html">ABOUT ME</a></li>
-    </ul>
-    <h2>Update what I've learned</h2>
-    <ul>
-        <li>C</li>
-        <li>Python</li>
-        <li>back-end</li>
+    <input type="button" value="night" onclick="Body.nightDayHandler(this)">
+    <div id="menu-box">
         <ul>
-            <li>Node.js</li>
-            <li>Javascript</li>
-            <li>RestAPI</li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="study.html">STUDY</a></li>
+            <li><a href="info.html">ABOUT ME</a></li>
         </ul>
+    </div>
+    <h2>Update what I've learned</h2>
+    <div id="study-list">
+        <ul>
+            <li>C</li>
+            <li>Python</li>
+            <li>back-end</li>
+            <div>
+                <ul>
+                    <li>Node.js</li>
+                    <li>Javascript</li>
+                    <li>RestAPI</li>
+                </ul>
+            </div>
         </ul>
-    </ul>
-
-    <script>
-        document.write('')
-    </script>
-    <img src="./image/jam.jpg" width="50%">
+    </div>
+    <img src="./image/jam.jpg" width="30%">
 </body>
 </html>
