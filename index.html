@@ -1,36 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>CodeJam</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+    <title>CodeJam</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="color.js"></script>
 </head>
 <body>
-    <h1><a href="index.html">CodeJam</a></h1>
-    <input type="button" value="night" onclick="Body.nightDayHandler(this)">
-    <!-- without argument 'this', function NightDayHandler does not work -->
-
-    <!--onkeydown/up: represent any keys being typed,
-    which include backspace, tab, up, down, home, end, etc-->
-    <!--
-        <input type="text" onkeydown="alert('key down!')">
-    -->
-
-    <!--onkeypress: represent a character being typed can be used for input-->
-    <!--
-    <input type="text" onkeypress="alrer('key press!')">
-    -->
-    <div id="menu-box">
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="study.html">STUDY</a></li>
-            <li><a href="info.html">ABOUT ME</a></li>
-        </ul>
+    <div class="js-side sections">
+        <!-- side bar section -->
+        <div class="title"> 
+            <!-- side bar title section -->
+            <h2 id="main-title"><a href="/">CodeJam</a></h2 class="side-title">
+            <h4 id="descript">development study blog</h4>
+        </div>
+        <div>
+            <!-- clock section -->
+            <h1 class="js-clock">00:00:00</h1>
+        </div>
+        <div class="toDo">
+            <!-- to do list section -->
+            <h2 id="toDo-title">to do list</h2>
+            <form class="js-toDoForm">
+                <input type="text" placeholder="write something to do">
+            </form>
+            <ul class="js-toDoList"></ul>
+        </div>
     </div>
-    <img src="./images/jam.jpg" width="30%">
+    <div class="js-main sections">
+        <!-- main section -->
+        <div class="js-naviContainer">
+            <!-- navigator bar -->
+
+            <!-- <input type="button" value="▽"> -->
+
+            <!-- comming soon -->
+        </div>
+        <div>
+            <!-- text section -->
+            <div>
+                <!-- infomation section -->
+                <h2>title</h2>
+                <div>
+                    <!-- date info section -->
+                    <!-- comming soon -->
+                </div>
+            </div>
+            <div>
+                <!-- main text section -->
+            </div>
+        </div>
+    </div>
+    
+    <script src="clock.js"></script>
+    <script src="todo.js"></script>
+    <!-- <script src="navi.js"></script> -->
 </body>
 </html>
